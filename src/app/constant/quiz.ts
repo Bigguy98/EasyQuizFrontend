@@ -10,14 +10,14 @@ export const quiz_builder = (function (doc) {
     })
   
     const startQuiz = ((optionHandler) => {
-  
+      
       const quizContainer = doc.querySelector('#quiz')
       if (quizContainer === null) return;
       const multiChoice = quizContainer.querySelector('.multiple-choice')
       if (multiChoice === null) return;
   
       return function quizHandler ({ target, type } : any) {
-  
+        console.log("here1")
         if (type === 'click' && !target.matches('button')) return
   
         // Remove previous handler
@@ -30,6 +30,7 @@ export const quiz_builder = (function (doc) {
         // add new handler bundled with new quiz properties in a closure
         multiChoice.addEventListener('click', getOptionHandler(newQuiz))
   
+        console.log(newQuiz.questions)
         // display first questions
         displayQuestion(newQuiz.questions[0])
   

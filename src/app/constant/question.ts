@@ -1,4 +1,4 @@
-export const questions = [
+export const questionsBank = [
 	{
 		"question": "What was Meta Platforms Inc formerly known as?",
 		"choices": [ "Facebook", "Instagram", "Disney", "LinkedIn" ],
@@ -241,8 +241,8 @@ export const questions = [
 ]
 
 
-export const shuffle = (arr: []) => ([...arr].sort(() => Math.random() - 0.5))
+export const shuffle = (arr: any[]) => ([...arr].sort(() => Math.random() - 0.5))
 
-export const getRandomSelection = (arr: [], max = 5) => (
+export const getRandomSelection = (arr: any[], max = 10) => (
   shuffle(arr).slice(0, Math.min(max, arr.length - 1))
 )

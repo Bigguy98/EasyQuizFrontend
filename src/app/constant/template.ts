@@ -2,7 +2,7 @@ export const quiz_templates = {
     intro : () =>
     (`
       <h1>Ready to Play?</h1>
-      <button">Start Quiz</button>
+      <button>Start Quiz</button>
     `),
   
     options : ([a, b, c, d] : any) =>

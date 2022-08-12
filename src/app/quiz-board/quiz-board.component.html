@@ -1,7 +1,7 @@
 <div id='quiz' class='quiz-container intro-hidden'>
-    <section class='question-container'>
+    <section class='question-container' [style.display]="isQuiz() ? 'block' : 'none'">
         <h1 class='question'></h1>
         <section class='multiple-choice'></section>
     </section>
-    <section class='intro conclusion'></section>
+    <section class='intro conclusion' [style.display]="isQuiz() ? 'none' : 'grid'"></section>
 </div>

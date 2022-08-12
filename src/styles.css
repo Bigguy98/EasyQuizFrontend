@@ -61,16 +61,6 @@ p {
     }
   }
 
-  &.intro-hidden {
-
-    .question-container {
-      display: block;
-    }
-
-    .intro {
-      display: none;
-    }
-  }
 
   .multiple-choice {
     display: grid;
@@ -79,6 +69,7 @@ p {
     grid-row-gap: 2rem;
   }
 }
+
 
 
 button {
@@ -149,6 +140,9 @@ button {
   }
 }
 
-.hide {
-  visibility: hidden;
+.true-option {
+  background-color: #339933;
+}
+.false-option {
+  background-color: #ff1a1a;
 }
